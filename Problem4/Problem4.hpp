@@ -18,9 +18,6 @@
 class Problem4 {
 public:
 	static long findLargestPalendromicProduct(int digits);
-
-private:
-	static bool isPalendrome(long n);
 };
 
 

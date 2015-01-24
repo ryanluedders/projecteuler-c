@@ -11,10 +11,6 @@
 class Problem3 {
 public:
 	static long findLargestPrime(long n);
-
-private:
-	static bool isFactorOf(long f, long n);
-	static bool isPrime(long n);
 };
 
 #endif /* PROBLEM3_PROBLEM3_HPP_ */
