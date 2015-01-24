@@ -4,8 +4,9 @@
 #include "Problem2/Problem2.hpp"
 #include "Problem3/Problem3.hpp"
 #include "Problem4/Problem4.hpp"
+#include "Problem5/Problem5.hpp"
 
-static const int CURRENT_PROBLEM = 4;
+static const int CURRENT_PROBLEM = 5;
 
 int main(int argc, char **argv) {
 	if (CURRENT_PROBLEM == 1) {
@@ -24,5 +25,18 @@ int main(int argc, char **argv) {
 		// problem 4
 		std::cout << Problem4::findLargestPalendromicProduct(2) << std::endl;
 		std::cout << Problem4::findLargestPalendromicProduct(3) << std::endl;
+	} else if (CURRENT_PROBLEM == 5) {
+		// problem 5
+		std::list<int> sample = std::list<int>();
+		for (int i = 1; i <= 10; ++i) {
+			sample.push_back(i);
+		}
+		std::cout << Problem5::findSmallestDivisibleBy(sample) << std::endl;
+
+		std::list<int> problem = std::list<int>();
+		for (int i = 1; i <= 20; ++i) {
+			problem.push_back(i);
+		}
+		std::cout << Problem5::findSmallestDivisibleBy(problem) << std::endl;
 	}
 }
