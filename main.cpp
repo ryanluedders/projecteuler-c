@@ -3,6 +3,7 @@
 #include "Problem1/Problem1.hpp"
 #include "Problem2/Problem2.hpp"
 #include "Problem3/Problem3.hpp"
+#include "Problem4/Problem4.hpp"
 
 int main(int argc, char **argv) {
 	// problem 1
@@ -17,4 +18,7 @@ int main(int argc, char **argv) {
 	std::cout << Problem3::findLargestPrime(13195) << std::endl;
 	std::cout << Problem3::findLargestPrime(600851475143) << std::endl;
 
+	// problem 4
+	std::cout << Problem4::findLargestPalendromicProduct(2) << std::endl;
+	std::cout << Problem4::findLargestPalendromicProduct(3) << std::endl;
 }
