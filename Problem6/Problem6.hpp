@@ -10,11 +10,8 @@
 
 #include <list>
 
-#include "log4cxx/logger.h"
-
 class Problem6 {
 private:
-	static log4cxx::LoggerPtr logger;
 
 public:
 	static long findDifferenceOfFirstN(long n);

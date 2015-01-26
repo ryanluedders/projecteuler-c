@@ -13,11 +13,12 @@
 #include "Problem4/Problem4.hpp"
 #include "Problem5/Problem5.hpp"
 #include "Problem6/Problem6.hpp"
+#include "Problem7/Problem7.hpp"
 
 using namespace log4cxx;
 using namespace log4cxx::helpers;
 
-static const int CURRENT_PROBLEM = 6;
+static const int CURRENT_PROBLEM = 7;
 
 int main(int argc, char **argv) {
 
@@ -60,5 +61,9 @@ int main(int argc, char **argv) {
 		// problem 6
 		LOG4CXX_INFO(logger, Problem6::findDifferenceOfFirstN(10));
 		LOG4CXX_INFO(logger, Problem6::findDifferenceOfFirstN(100));
+	} else if (CURRENT_PROBLEM == 7) {
+		// problem 7
+		LOG4CXX_INFO(logger, Problem7::findNthPrime(6));
+		LOG4CXX_INFO(logger, Problem7::findNthPrime(10001));
 	}
 }
