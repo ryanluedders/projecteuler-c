@@ -1,14 +1,32 @@
 #include <iostream>
 
+// include log4cxx header files.
+#include "log4cxx/logger.h"
+#include "log4cxx/basicconfigurator.h"
+#include "log4cxx/propertyconfigurator.h"
+#include "log4cxx/helpers/exception.h"
+
+#include "Common/Constants.hpp"
 #include "Problem1/Problem1.hpp"
 #include "Problem2/Problem2.hpp"
 #include "Problem3/Problem3.hpp"
 #include "Problem4/Problem4.hpp"
 #include "Problem5/Problem5.hpp"
+#include "Problem6/Problem6.hpp"
 
-static const int CURRENT_PROBLEM = 5;
+using namespace log4cxx;
+using namespace log4cxx::helpers;
+
+static const int CURRENT_PROBLEM = 6;
 
 int main(int argc, char **argv) {
+
+	LoggerPtr logger(Logger::getLogger(Constants::PROJECT_NAME));
+	LOG4CXX_INFO(logger,
+			std::string("running projecteuler, problem #") +
+			std::to_string(CURRENT_PROBLEM)
+			);
+
 	if (CURRENT_PROBLEM == 1) {
 		// problem 1
 		std::cout << Problem1::getSumOfMultiplesBelow(10) << std::endl;
@@ -38,5 +56,9 @@ int main(int argc, char **argv) {
 			problem.push_back(i);
 		}
 		std::cout << Problem5::findSmallestDivisibleBy(problem) << std::endl;
+	} else if (CURRENT_PROBLEM == 6) {
+		// problem 6
+		LOG4CXX_INFO(logger, Problem6::findDifferenceOfFirstN(10));
+		LOG4CXX_INFO(logger, Problem6::findDifferenceOfFirstN(100));
 	}
 }
