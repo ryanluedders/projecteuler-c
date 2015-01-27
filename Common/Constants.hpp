@@ -10,11 +10,13 @@
 
 #include <string>
 
-class Constants {
-public:
-	static const std::string PROJECT_NAME;
-};
+namespace Common {
 
+	class Constants {
+	public:
+		static const std::string PROJECT_NAME;
+	};
 
+}
 
 #endif /* COMMON_CONSTANTS_HPP_ */

@@ -7,6 +7,8 @@
 
 #include "Constants.hpp"
 
+using namespace Common;
+
 const std::string Constants::PROJECT_NAME = "PROJECT_EULER";
 
 

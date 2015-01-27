@@ -2,9 +2,6 @@
 
 // include log4cxx header files.
 #include "log4cxx/logger.h"
-#include "log4cxx/basicconfigurator.h"
-#include "log4cxx/propertyconfigurator.h"
-#include "log4cxx/helpers/exception.h"
 
 #include "Common/Constants.hpp"
 #include "Problem1/Problem1.hpp"
@@ -15,14 +12,14 @@
 #include "Problem6/Problem6.hpp"
 #include "Problem7/Problem7.hpp"
 
-using namespace log4cxx;
-using namespace log4cxx::helpers;
+using namespace Common;
 
 static const int CURRENT_PROBLEM = 7;
 
 int main(int argc, char **argv) {
 
-	LoggerPtr logger(Logger::getLogger(Constants::PROJECT_NAME));
+	log4cxx::LoggerPtr logger(
+			log4cxx::Logger::getLogger(Constants::PROJECT_NAME));
 	LOG4CXX_INFO(logger,
 			std::string("running projecteuler, problem #") +
 			std::to_string(CURRENT_PROBLEM)

@@ -9,6 +9,8 @@
 
 #include "Collections.hpp"
 
+using namespace Common;
+
 void Collections::printListOfLong(std::list<long> l) {
 	std::list<long>::iterator it;
 	std::cout << "[";

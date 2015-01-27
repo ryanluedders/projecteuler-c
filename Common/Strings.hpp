@@ -10,9 +10,13 @@
 
 #include <string>
 
-class Strings {
-public:
-	static bool isPalindrome(std::string s);
-};
+namespace Common {
+
+	class Strings {
+	public:
+		static bool isPalindrome(std::string s);
+	};
+
+}
 
 #endif /* COMMON_STRINGS_HPP_ */

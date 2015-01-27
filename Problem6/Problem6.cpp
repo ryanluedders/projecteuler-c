@@ -10,6 +10,8 @@
 #include "Collections.hpp"
 #include "Problem6.hpp"
 
+using namespace Common;
+
 long Problem6::findDifferenceOfFirstN(long n) {
 
 	std::list<long> input = std::list<long>();

@@ -12,6 +12,8 @@
 #include "Collections.hpp"
 #include "Numbers.hpp"
 
+using namespace Common;
+
 long Problem7::findNthPrime(long n) {
 	int count = 0;
 	int idx = 1;

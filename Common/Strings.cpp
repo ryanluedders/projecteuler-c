@@ -9,6 +9,8 @@
 
 #include "Strings.hpp"
 
+using namespace Common;
+
 bool Strings::isPalindrome(std::string s) {
 	int halfLength = floor(s.length() / 2);
 	int secondHalfStart = ceil(s.length() / 2);
