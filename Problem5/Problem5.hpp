@@ -10,9 +10,13 @@
 
 #include <list>
 
-class Problem5 {
-public:
-	static long findSmallestDivisibleBy(std::list<int> divisors);
-};
+namespace Problem {
+
+	class Problem5 {
+	public:
+		static long findSmallestDivisibleBy(std::list<int> divisors);
+	};
+
+}
 
 #endif /* PROBLEM5_PROBLEM5_HPP_ */

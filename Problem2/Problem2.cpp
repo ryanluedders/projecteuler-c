@@ -7,6 +7,8 @@
 
 #include "Problem2.hpp"
 
+using namespace Problem;
+
 int Problem2::findSumOfEvenFibonacciNumbersBelow(int below) {
 	int current = 2;
 	int previous = 1;

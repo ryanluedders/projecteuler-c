@@ -18,12 +18,16 @@
  * exceed four million, find the sum of the even-valued terms.
  */
 
-class Problem2 {
-private:
-	static const int LIMIT = 4000000;
+namespace Problem {
 
-public:
-	static int findSumOfEvenFibonacciNumbersBelow(int below = LIMIT);
-};
+	class Problem2 {
+	private:
+		static const int LIMIT = 4000000;
+
+	public:
+		static int findSumOfEvenFibonacciNumbersBelow(int below = LIMIT);
+	};
+
+}
 
 #endif /* PROBLEM2_PROBLEM2_HPP_ */

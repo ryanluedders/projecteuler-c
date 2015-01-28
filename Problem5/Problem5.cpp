@@ -9,6 +9,8 @@
 
 #include "Problem5.hpp"
 
+using namespace Problem;
+
 long Problem5::findSmallestDivisibleBy(std::list<int> divisors) {
 	long LARGEST = 1;
 

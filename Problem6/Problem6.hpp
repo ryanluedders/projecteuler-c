@@ -10,13 +10,17 @@
 
 #include <list>
 
-class Problem6 {
-private:
+namespace Problem {
 
-public:
-	static long findDifferenceOfFirstN(long n);
-	static long findSumSquared(std::list<long> numbers);
-	static long findSumOfSquares(std::list<long> numbers);
-};
+	class Problem6 {
+	private:
+
+	public:
+		static long findDifferenceOfFirstN(long n);
+		static long findSumSquared(std::list<long> numbers);
+		static long findSumOfSquares(std::list<long> numbers);
+	};
+
+}
 
 #endif /* PROBLEM6_PROBLEM6_HPP_ */

@@ -13,8 +13,9 @@
 #include "Problem7/Problem7.hpp"
 
 using namespace Common;
+using namespace Problem;
 
-static const int CURRENT_PROBLEM = 7;
+static const int CURRENT_PROBLEM = 4;
 
 int main(int argc, char **argv) {
 

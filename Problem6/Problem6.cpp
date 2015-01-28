@@ -11,6 +11,7 @@
 #include "Problem6.hpp"
 
 using namespace Common;
+using namespace Problem;
 
 long Problem6::findDifferenceOfFirstN(long n) {
 

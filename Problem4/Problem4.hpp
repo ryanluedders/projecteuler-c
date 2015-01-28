@@ -15,11 +15,13 @@
 #ifndef PROBLEM4_PROBLEM4_HPP_
 #define PROBLEM4_PROBLEM4_HPP_
 
-class Problem4 {
-public:
-	static long findLargestPalendromicProduct(int digits);
-};
+namespace Problem {
 
+	class Problem4 {
+	public:
+		static long findLargestPalendromicProduct(int digits);
+	};
 
+}
 
 #endif /* PROBLEM4_PROBLEM4_HPP_ */

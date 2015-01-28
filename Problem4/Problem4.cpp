@@ -11,6 +11,7 @@
 #include "Problem4.hpp"
 
 using namespace Common;
+using namespace Problem;
 
 long Problem4::findLargestPalendromicProduct(int digits) {
 	int highest = pow(10, digits);

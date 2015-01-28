@@ -19,10 +19,14 @@
 
 #include <vector>
 
-class Problem1 {
-public:
-	static int getSumOfMultiplesBelow(int below);
+namespace Problem {
 
-};
+	class Problem1 {
+	public:
+		static int getSumOfMultiplesBelow(int below);
+
+	};
+
+}
 
 #endif /* PROBLEM_1_HPP */

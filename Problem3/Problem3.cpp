@@ -11,6 +11,7 @@
 #include "Problem3.hpp"
 
 using namespace Common;
+using namespace Problem;
 
 long Problem3::findLargestPrime(long n) {
 	for (long i=std::sqrt(n); i > 1; --i) {

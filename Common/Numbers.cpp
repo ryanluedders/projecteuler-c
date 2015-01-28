@@ -40,9 +40,6 @@ bool Numbers::isPrime(long n) {
 bool Numbers::isPalindrome(long n) {
 	std::string nstr = std::to_string(n);
 
-	LOG4CXX_INFO(logger,
-			std::string("converted number to string: ") + nstr);
-
 	return Strings::isPalindrome(nstr);
 }
 

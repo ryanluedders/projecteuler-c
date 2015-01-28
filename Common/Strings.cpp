@@ -6,17 +6,18 @@
  */
 
 #include <cmath>
+#include <iostream>
 
 #include "Strings.hpp"
 
 using namespace Common;
 
 bool Strings::isPalindrome(std::string s) {
-	int halfLength = floor(s.length() / 2);
-	int secondHalfStart = ceil(s.length() / 2);
+	int halfLength = floor(s.length() / 2.0);
+	int secondStart = ceil(s.length() / 2.0);
 
 	std::string firstHalf = s.substr(0, halfLength);
-	std::string secondHalf = s.substr(secondHalfStart, halfLength);
+	std::string secondHalf = s.substr(secondStart, halfLength);
 
 	std::string secondHalfReverse = std::string();
 

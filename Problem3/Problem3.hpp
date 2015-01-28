@@ -8,9 +8,13 @@
 #ifndef PROBLEM3_PROBLEM3_HPP_
 #define PROBLEM3_PROBLEM3_HPP_
 
-class Problem3 {
-public:
-	static long findLargestPrime(long n);
-};
+namespace Problem {
+
+	class Problem3 {
+	public:
+		static long findLargestPrime(long n);
+	};
+
+}
 
 #endif /* PROBLEM3_PROBLEM3_HPP_ */

@@ -13,6 +13,7 @@
 #include "Numbers.hpp"
 
 using namespace Common;
+using namespace Problem;
 
 long Problem7::findNthPrime(long n) {
 	int count = 0;
