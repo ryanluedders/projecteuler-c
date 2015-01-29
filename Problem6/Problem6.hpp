@@ -27,8 +27,8 @@ namespace Problem {
 
 	public:
 		static long findDifferenceOfFirstN(long n);
-		static long findSumSquared(std::list<long> numbers);
-		static long findSumOfSquares(std::list<long> numbers);
+		static long findSumSquared(std::list<long> & numbers);
+		static long findSumOfSquares(std::list<long> & numbers);
 	};
 
 }

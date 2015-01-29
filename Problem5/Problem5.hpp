@@ -18,7 +18,7 @@ namespace Problem {
 
 	class Problem5 {
 	public:
-		static long findSmallestDivisibleBy(std::list<int> divisors);
+		static long findSmallestDivisibleBy(std::list<int> & divisors);
 	};
 
 }

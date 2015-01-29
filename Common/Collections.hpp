@@ -14,7 +14,7 @@ namespace Common {
 
 	class Collections {
 	public:
-		static void printListOfLong(std::list<long> l);
+		static void printListOfLong(std::list<long> & l);
 
 	};
 

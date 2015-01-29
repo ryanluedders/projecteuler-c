@@ -11,20 +11,24 @@
 
 using namespace Problem;
 
-long Problem5::findSmallestDivisibleBy(std::list<int> divisors) {
+long Problem5::findSmallestDivisibleBy(std::list<int> & divisors) {
 	long LARGEST = 1;
+	divisors.sort();
+	long largestDivisor = divisors.front();
 
 	// multiply the numbers together to find worst case
-	std::list<int>::iterator it;
-	for(it = divisors.begin(); it != divisors.end(); ++it) {
+	// and find the largest divisor to set up the loop
+	std::list<int>::reverse_iterator it;
+	for(it = divisors.rbegin(); it != divisors.rend(); ++it) {
 		LARGEST = LARGEST * (*it);
+		if ((*it) > largestDivisor) {
+			largestDivisor = (*it);
+		}
 	}
 
-	// beginning at 1, find the smallest number divisible by
-	// everything in the set of divisors
-	for (long i = 1; i < LARGEST; i++) {
+	for (long i = largestDivisor; i < LARGEST; i += largestDivisor) {
 		bool found = true;
-		for (it = divisors.begin(); it != divisors.end(); ++it) {
+		for (it = divisors.rbegin(); it != divisors.rend(); ++it) {
 			if (i % (*it) != 0) {
 				found = false;
 				break;

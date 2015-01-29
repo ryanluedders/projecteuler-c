@@ -27,7 +27,7 @@ long Problem6::findDifferenceOfFirstN(long n) {
 
 }
 
-long Problem6::findSumSquared(std::list<long> numbers) {
+long Problem6::findSumSquared(std::list<long> & numbers) {
 	long sum = 0;
 	std::list<long>::iterator it;
 	for (it = numbers.begin(); it != numbers.end(); ++it) {
@@ -37,7 +37,7 @@ long Problem6::findSumSquared(std::list<long> numbers) {
 	return sumSquared;
 }
 
-long Problem6::findSumOfSquares(std::list<long> numbers) {
+long Problem6::findSumOfSquares(std::list<long> & numbers) {
 	long sum = 0;
 	std::list<long>::iterator it;
 	for (it = numbers.begin(); it != numbers.end(); ++it) {

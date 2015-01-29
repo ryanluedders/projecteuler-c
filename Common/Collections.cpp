@@ -11,7 +11,7 @@
 
 using namespace Common;
 
-void Collections::printListOfLong(std::list<long> l) {
+void Collections::printListOfLong(std::list<long> & l) {
 	std::list<long>::iterator it;
 	std::cout << "[";
 	for (it = l.begin(); it != l.end(); ++it) {
