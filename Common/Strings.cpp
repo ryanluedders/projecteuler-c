@@ -36,4 +36,12 @@ bool Strings::isPalindrome(std::string s) {
 	return false;
 }
 
+int Strings::toInt(std::string s) {
+	return stoi(s);
+}
+
+int Strings::toInt(char c) {
+	return atoi(&c);
+}
+
 

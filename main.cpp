@@ -11,11 +11,12 @@
 #include "Problem5/Problem5.hpp"
 #include "Problem6/Problem6.hpp"
 #include "Problem7/Problem7.hpp"
+#include "Problem8/Problem8.hpp"
 
 using namespace Common;
 using namespace Problem;
 
-static const int CURRENT_PROBLEM = 4;
+static const int CURRENT_PROBLEM = 8;
 
 int main(int argc, char **argv) {
 
@@ -63,5 +64,10 @@ int main(int argc, char **argv) {
 		// problem 7
 		LOG4CXX_INFO(logger, Problem7::findNthPrime(6));
 		LOG4CXX_INFO(logger, Problem7::findNthPrime(10001));
+	} else if (CURRENT_PROBLEM == 8) {
+		LOG4CXX_INFO(logger, Problem8::findGreatestProductInSUsingN(
+		    		Problem8::SEQUENCE, 4));
+		LOG4CXX_INFO(logger, Problem8::findGreatestProductInSUsingN(
+		    		Problem8::SEQUENCE, 13));
 	}
 }

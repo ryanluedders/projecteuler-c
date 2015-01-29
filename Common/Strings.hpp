@@ -15,6 +15,8 @@ namespace Common {
 	class Strings {
 	public:
 		static bool isPalindrome(std::string s);
+		static int toInt(std::string s);
+		static int toInt(char c);
 	};
 
 }
