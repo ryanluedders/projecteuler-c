@@ -4,9 +4,9 @@
 
 using namespace Problem;
 
-BOOST_AUTO_TEST_SUITE(Problem7Test)
+BOOST_AUTO_TEST_SUITE(Problem8Test)
 
-BOOST_AUTO_TEST_CASE(test) {
+BOOST_AUTO_TEST_CASE(testFindGreatestProductInSUsingN) {
     BOOST_CHECK_EQUAL(Problem8::findGreatestProductInSUsingN(
     		Problem8::SEQUENCE, 4), 5832);
     BOOST_CHECK_EQUAL(Problem8::findGreatestProductInSUsingN(
