@@ -1,5 +1,5 @@
 /*
- * Problem6.cpp
+ * Problem7.cpp
  *
  *  Created on: Jan 25, 2015
  *      Author: ryanluedders
