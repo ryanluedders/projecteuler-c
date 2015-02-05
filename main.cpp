@@ -79,6 +79,6 @@ int main(int argc, char **argv) {
 		LOG4CXX_INFO(logger, "product: " + to_string(result.a * result.b * result.c));
 	} else if (CURRENT_PROBLEM == 10) {
 		LOG4CXX_INFO(logger, Problem10::sumOfPrimesBelow(10));
-		LOG4CXX_INFO(logger, Problem10::sumOfPrimesBelow(2000000L));
+		LOG4CXX_INFO(logger, Problem10::sumOfPrimesBelow(2000000));
 	}
 }

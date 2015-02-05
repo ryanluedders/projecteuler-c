@@ -22,7 +22,9 @@ BOOST_AUTO_TEST_CASE(testIsFactorOf_negative_f) {
 }
 
 BOOST_AUTO_TEST_CASE(testIsPrime_happy_path) {
-    BOOST_CHECK_EQUAL(Numbers::isPrime(3), true);
+	BOOST_CHECK_EQUAL(Numbers::isPrime(0), false);
+	BOOST_CHECK_EQUAL(Numbers::isPrime(1), false);
+	BOOST_CHECK_EQUAL(Numbers::isPrime(2), true);
     BOOST_CHECK_EQUAL(Numbers::isPrime(7), true);
     BOOST_CHECK_EQUAL(Numbers::isPrime(8), false);
 }
