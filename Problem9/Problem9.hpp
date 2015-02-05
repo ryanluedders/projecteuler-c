@@ -18,7 +18,13 @@ namespace Problem {
 	private:
 
 	public:
-		static long findPythagoreanTripleWithSum(long n);
+		struct Result {
+			int a;
+			int b;
+			int c;
+		};
+
+		static Result findPythagoreanTripleWithSum(long n);
 
 	};
 

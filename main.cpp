@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 // include log4cxx header files.
 #include "log4cxx/logger.h"
@@ -12,11 +13,12 @@
 #include "Problem6/Problem6.hpp"
 #include "Problem7/Problem7.hpp"
 #include "Problem8/Problem8.hpp"
+#include "Problem9/Problem9.hpp"
 
 using namespace Common;
 using namespace Problem;
 
-static const int CURRENT_PROBLEM = 8;
+static const int CURRENT_PROBLEM = 9;
 
 int main(int argc, char **argv) {
 
@@ -69,5 +71,10 @@ int main(int argc, char **argv) {
 		    		Problem8::SEQUENCE, 4));
 		LOG4CXX_INFO(logger, Problem8::findGreatestProductInSUsingN(
 		    		Problem8::SEQUENCE, 13));
+	} else if (CURRENT_PROBLEM == 9) {
+		Problem9::Result result = Problem9::findPythagoreanTripleWithSum(1000);
+		LOG4CXX_INFO(logger, to_string(result.a) + "," +
+				to_string(result.b) + "," + to_string(result.c));
+		LOG4CXX_INFO(logger, "product: " + to_string(result.a * result.b * result.c));
 	}
 }
