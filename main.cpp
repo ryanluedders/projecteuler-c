@@ -14,11 +14,12 @@
 #include "Problem7/Problem7.hpp"
 #include "Problem8/Problem8.hpp"
 #include "Problem9/Problem9.hpp"
+#include "Problem10/Problem10.hpp"
 
 using namespace Common;
 using namespace Problem;
 
-static const int CURRENT_PROBLEM = 9;
+static const int CURRENT_PROBLEM = 10;
 
 int main(int argc, char **argv) {
 
@@ -76,5 +77,8 @@ int main(int argc, char **argv) {
 		LOG4CXX_INFO(logger, to_string(result.a) + "," +
 				to_string(result.b) + "," + to_string(result.c));
 		LOG4CXX_INFO(logger, "product: " + to_string(result.a * result.b * result.c));
+	} else if (CURRENT_PROBLEM == 10) {
+		LOG4CXX_INFO(logger, Problem10::sumOfPrimesBelow(10));
+		LOG4CXX_INFO(logger, Problem10::sumOfPrimesBelow(2000000L));
 	}
 }

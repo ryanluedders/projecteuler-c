@@ -29,11 +29,16 @@ bool Numbers::isFactorOf(long f, long n) {
 }
 
 bool Numbers::isPrime(long n) {
+	if (n == 0 || n == 1) {
+		return false;
+	}
+
 	for(long i=2; i<=std::sqrt(n); ++i) {
 		if (n % i == 0) {
 			return false;
 		}
 	}
+
 	return true;
 }
 
