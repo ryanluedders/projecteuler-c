@@ -15,16 +15,19 @@
 #ifndef PROBLEM_1_HPP
 #define PROBLEM_1_HPP
 
-/*
-
- */
-
 #include <vector>
 
 namespace Problem {
 
 	class Problem1 {
+
 	public:
+		/**
+		 * return the sum of all multiples of 3 or 5 below the
+		 * specified number
+		 * @param below numbers below this upper limit
+		 * @return the sum of all multiples below
+		 */
 		static int getSumOfMultiplesBelow(int below);
 
 	};

@@ -15,7 +15,13 @@
 namespace Problem {
 
 	class Problem3 {
+
 	public:
+		/**
+		 * find the largest prime less than n
+		 * @param n number to find a prime less than
+		 * @return the largest prime less than n
+		 */
 		static long findLargestPrime(long n);
 	};
 

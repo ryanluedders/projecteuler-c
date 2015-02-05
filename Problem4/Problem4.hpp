@@ -18,7 +18,14 @@
 namespace Problem {
 
 	class Problem4 {
+
 	public:
+		/**
+		 * find the largest palindrome that is made from
+		 * the product of two n-digit numbers
+		 * @param digits the number of digits in the numbers
+		 * @return the largest product that is a palindrome
+		 */
 		static long findLargestPalendromicProduct(int digits);
 	};
 

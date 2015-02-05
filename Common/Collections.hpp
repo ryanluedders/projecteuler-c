@@ -12,8 +12,17 @@
 
 namespace Common {
 
+	/**
+	 * a class containing functions useful for dealing
+	 * with collections (ex. lists)
+	 */
 	class Collections {
+
 	public:
+		/**
+		 * prints a list of long integers to standard out
+		 * @param l a list containing long integers
+		 */
 		static void printListOfLong(std::list<long> & l);
 
 	};

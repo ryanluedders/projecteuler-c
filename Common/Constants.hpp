@@ -12,8 +12,13 @@
 
 namespace Common {
 
+	/**
+	 * class containing constants useful in the project
+	 */
 	class Constants {
+
 	public:
+		/** constant indicating the project name */
 		static const std::string PROJECT_NAME;
 	};
 

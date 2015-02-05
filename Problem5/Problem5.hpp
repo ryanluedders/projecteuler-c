@@ -17,7 +17,14 @@
 namespace Problem {
 
 	class Problem5 {
+
 	public:
+		/**
+		 * find the smallest number that is divisible by all divisors
+		 * in the list
+		 * @param divisors the set of divisors that must divide the number
+		 * @return the smallest number that is divisble by all divisors
+		 */
 		static long findSmallestDivisibleBy(std::list<int> & divisors);
 	};
 

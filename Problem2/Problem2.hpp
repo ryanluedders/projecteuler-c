@@ -19,10 +19,17 @@
 namespace Problem {
 
 	class Problem2 {
+
 	private:
+		/** limit to use as the default paramter for the below function */
 		static const int LIMIT = 4000000;
 
 	public:
+		/**
+		 * find the sum of all even fibonacci numbers below a limit
+		 * @param below the limit to find numbers below
+		 * @param the sum of all fibonacci numbers below the limit
+		 */
 		static int findSumOfEvenFibonacciNumbersBelow(int below = LIMIT);
 	};
 

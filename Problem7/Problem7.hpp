@@ -15,9 +15,13 @@
 namespace Problem {
 
 	class Problem7 {
-	private:
 
 	public:
+		/**
+		 * find the Nth prime, starting with 2
+		 * @param the position we're seeking in the sequence of primes
+		 * @return the nth prime
+		 */
 		static long findNthPrime(long n);
 	};
 

@@ -43,8 +43,11 @@ bool Numbers::isPrime(long n) {
 }
 
 bool Numbers::isPalindrome(long n) {
+	// convert the number to a string
 	std::string nstr = std::to_string(n);
 
+	// defer to the Strings method of checking
+	// for a palindrome
 	return Strings::isPalindrome(nstr);
 }
 

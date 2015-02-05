@@ -44,8 +44,16 @@ namespace Problem {
 	private:
 
 	public:
+		/** the sequence given in the problem */
 		const static string SEQUENCE;
 
+		/**
+		 * finds the greatest product in the sequence, considering
+		 * n consecutive numbers
+		 * @param s the sequence
+		 * @param n the number of consecutive numbers to consider
+		 * @return the greatest product possible from n consecutive numbers
+		 */
 		static long findGreatestProductInSUsingN(string s, long n);
 
 	};

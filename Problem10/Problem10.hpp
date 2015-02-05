@@ -19,9 +19,13 @@ using namespace std;
 namespace Problem {
 
 	class Problem10 {
-	private:
 
 	public:
+		/**
+		 * find the sum of all primes below a specified n
+		 * @param n the number to find sum of primes below
+		 * @return the sum of all primes below n
+		 */
 		static long sumOfPrimesBelow(long n);
 	};
 
